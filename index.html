@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clément Persyn — Gameplay Programming (Portfolio)</title>
+  <meta name="description" content="Portfolio statique — Étudiant en jeu vidéo (Unity/C#) — Gameplay Programming, game feel, architecture & collaboration." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link id="dynamicFontsLink" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#f4f7fb" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <!-- Fond dynamique global qui suit le projet actif au scroll -->
+  <div class="page-bg-layer" id="pageBgLayer" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="brand-name">Clément Persyn</div>
+          <div class="brand-role">Gameplay Programmer — Unity / C#</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expérience & Scolarité</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="https://www.linkedin.com/" data-link="linkedin" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+      </nav>
+
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#projets">Projets</a>
+      <a href="#experience">Expérience & Scolarité</a>
+      <a href="#competences">Compétences</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="https://www.linkedin.com/" data-link="linkedin" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO (DA claire) -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="kicker">Étudiant en jeu vidéo — En apprentissage à ISART Digital (Game Design &amp; Programming)</p>
+
+          <h1>
+            Clément Persyn
+            <span class="h1-sub">Gameplay Programming</span>
+          </h1>
+
+          <p class="lead">
+            À la recherche d’opportunités en Gameplay Programming
+            (et sensible aux serious games / expériences interactives),
+            alliant architecture gameplay, sensations de jeu (game feel),
+            technique et collaboration pluridisciplinaire.
+          </p>
+
+          <div class="hero-links" aria-label="Liens rapides">
+            <a class="chip" href="#projets">Projets</a>
+            <a class="chip" href="#experience">Expérience &amp; Parcours</a>
+            <a class="chip" href="#competences">Compétences</a>
+            <a class="chip" href="#contact">Contact</a>
+
+            <a class="chip" href="https://github.com/" data-link="github" target="_blank" rel="noreferrer noopener">GitHub</a>
+            <a class="chip" href="https://itch.io/" data-link="itch" target="_blank" rel="noreferrer noopener">Itch.io</a>
+            <a class="chip" href="https://www.linkedin.com/" data-link="linkedin" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a class="chip" href="./CV/CV_Clement_Persyn.pdf" data-link="cv" target="_blank" rel="noopener">CV (PDF)</a>
+          </div>
+        </div>
+
+        <aside class="hero-right" aria-label="Coordonnées">
+          <div class="card card-light">
+            <h2 class="card-title">Coordonnées</h2>
+            <ul class="meta-list">
+              <li>
+                <span class="meta-label">Email</span>
+                <a class="meta-value" href="mailto:prsn.clem@gmail.com">prsn.clem@gmail.com</a>
+              </li>
+              <li>
+                <span class="meta-label">Téléphone</span>
+                <a class="meta-value" href="tel:+33766123107">07 66 12 31 07</a>
+              </li>
+              <li>
+                <span class="meta-label">Localisation</span>
+                <span class="meta-value">91210 Draveil</span>
+              </li>
+              <li>
+                <span class="meta-label">Statut</span>
+                <span class="meta-value">Apprentissage (2025–2029)</span>
+              </li>
+              <li>
+                <span class="meta-label">Cible</span>
+                <span class="meta-value">Gameplay Programming</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section section-immersive" id="projets">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projets</h2>
+        </div>
+
+        <div class="project-stack">
+          <!-- Stjerne -->
+          <article
+            class="project-card project-section theme-stjerne"
+            id="proj-stjerne"
+            data-project="stjerne"
+            data-bg-tint="linear-gradient(180deg, rgba(10,16,28,.64) 0%, rgba(10,16,28,.52) 50%, rgba(10,16,28,.76) 100%)"
+            aria-label="Projet Stjerne"
+          >
+            <div class="project-content">
+              <div class="project-top">
+                <div>
+                  <h3 class="project-title">Stjerne</h3>
+                  <p class="project-meta">
+                    <span>02/2026 – 04/2026</span>
+                    <span class="dot" aria-hidden="true"></span>
+                    <span>Projet d’études ISART Digital</span>
+                  </p>
+                </div>
+
+                <div class="pill-row" aria-label="Moteur et langage">
+                  <span class="pill pill-strong">Unity</span>
+                  <span class="pill">C#</span>
+                </div>
+              </div>
+
+              <div class="project-context">
+                <p class="project-pitch">
+                  Plateformer 3D &amp; exploration aérienne dans le Copenhague enneigé de 1850 :
+                  petite fille avec planeur et courants d’air verticaux au-dessus d’une ville hostile.
+                </p>
+                <div class="mini-meta">
+                  <span class="mini-item">Équipe : 13 (4 programmeurs, 7 artistes, 2 sound designers)</span>
+                </div>
+              </div>
+
+              <div class="media-16x9" data-media-slot role="img" aria-label="Zone média — à remplacer par vidéo ou GIF">
+                <div class="media-placeholder">
+                  <div class="media-placeholder-title">Vidéo / GIF</div>
+                  <div class="media-placeholder-sub">Configuré via portfolio.config.js</div>
+                </div>
+              </div>
+
+              <div class="project-actions" aria-label="Liens du projet">
+                <button class="btn btn-secondary js-open-modal" type="button" data-modal="modal-stjerne" data-project="stjerne">
+                  Détails
+                </button>
+
+                <a class="btn btn-secondary" href="https://example.com/video-stjerne" data-project-link="video" target="_blank" rel="noreferrer noopener">Vidéo</a>
+                <a class="btn btn-secondary" href="https://example.com/itch-stjerne" data-project-link="itch" target="_blank" rel="noreferrer noopener">Build / Itch.io</a>
+
+                <!-- SUPPRIMÉ : Code / Breakdown -->
+              </div>
+
+              <div class="skills-row" aria-label="Compétences / systèmes clés">
+                <span class="badge badge-soft">Physique joueur (marche ↔ vol en planeur)</span>
+                <span class="badge badge-soft">ScriptableObjects (Player / UI / SoundManager)</span>
+                <span class="badge badge-soft">Bridge UI/animation (avec 7 artistes)</span>
+                <span class="badge badge-soft">Level design via courants d’air (pacing)</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- GroovExe -->
+          <article
+            class="project-card project-section theme-groovexe"
+            id="proj-groovexe"
+            data-project="groovexe"
+            data-bg-tint="linear-gradient(180deg, rgba(18,10,18,.48) 0%, rgba(18,10,18,.34) 50%, rgba(18,10,18,.64) 100%)"
+            aria-label="Projet GroovExe"
+          >
+            <div class="project-content">
+              <div class="project-top">
+                <div>
+                  <h3 class="project-title">GroovExe</h3>
+                  <p class="project-meta">
+                    <span>2026</span>
+                    <span class="dot" aria-hidden="true"></span>
+                    <span>Game Jam ISART Digital — 4 jours</span>
+                  </p>
+                </div>
+
+                <div class="pill-row" aria-label="Moteur et langage">
+                  <span class="pill pill-strong">Unity</span>
+                  <span class="pill">C#</span>
+                </div>
+              </div>
+
+              <div class="project-context">
+                <p class="project-pitch">
+                  Jeu de rythme arcade au clavier sur le thème « Print » :
+                  protéger son profil numérique en piratant d’autres cibles en rythme avec la musique.
+                </p>
+                <div class="mini-meta">
+                  <span class="mini-item">Équipe : 10 (3 programmeurs, 4 artistes, 2 game designers, 1 sound designer)</span>
+                </div>
+              </div>
+
+              <div class="media-16x9" data-media-slot role="img" aria-label="Zone média — à remplacer par vidéo ou GIF">
+                <div class="media-placeholder">
+                  <div class="media-placeholder-title">Vidéo / GIF</div>
+                  <div class="media-placeholder-sub">Configuré via portfolio.config.js</div>
+                </div>
+              </div>
+
+              <div class="project-actions" aria-label="Liens du projet">
+                <button class="btn btn-secondary js-open-modal" type="button" data-modal="modal-groovexe" data-project="groovexe">
+                  Détails
+                </button>
+
+                <a class="btn btn-secondary" href="https://example.com/video-groovexe" data-project-link="video" target="_blank" rel="noreferrer noopener">Vidéo</a>
+                <a class="btn btn-secondary" href="https://example.com/itch-groovexe" data-project-link="itch" target="_blank" rel="noreferrer noopener">Build / Itch.io</a>
+
+                <!-- SUPPRIMÉ : Code / Breakdown -->
+              </div>
+
+              <div class="skills-row" aria-label="Compétences / systèmes clés">
+                <span class="badge badge-soft">Synchronisation inputs ↔ musique</span>
+                <span class="badge badge-soft">Boucle gameplay thème « Print »</span>
+                <span class="badge badge-soft">Prototypage rapide &amp; scope management</span>
+                <span class="badge badge-soft">Collaboration music/sound &amp; design</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Motion Rush -->
+          <article
+            class="project-card project-section theme-motionrush"
+            id="proj-motionrush"
+            data-project="motionrush"
+            data-bg-tint="linear-gradient(180deg, rgba(10,16,28,.62) 0%, rgba(10,16,28,.48) 50%, rgba(10,16,28,.74) 100%)"
+            aria-label="Projet Motion Rush"
+          >
+            <div class="project-content">
+              <div class="project-top">
+                <div>
+                  <h3 class="project-title">Motion Rush</h3>
+                  <p class="project-meta">
+                    <span>10/2025 – 11/2025</span>
+                    <span class="dot" aria-hidden="true"></span>
+                    <span>1 mois &amp; demi — R&amp;D / études ISART Digital</span>
+                  </p>
+                </div>
+
+                <div class="pill-row" aria-label="Moteur et langage">
+                  <span class="pill pill-strong">Unity</span>
+                  <span class="pill">C#</span>
+                </div>
+              </div>
+
+              <div class="project-context">
+                <p class="project-pitch">
+                  Puzzle game 3D de gestion de trajectoires basé sur le reverse engineering de Rush (Two Tribes),
+                  avec une direction artistique minimaliste orientée Motion Design.
+                </p>
+                <div class="mini-meta">
+                  <span class="mini-item">Solo — 1 personne</span>
+                </div>
+              </div>
+
+              <div class="media-16x9" data-media-slot role="img" aria-label="Zone média — à remplacer par vidéo ou GIF">
+                <div class="media-placeholder">
+                  <div class="media-placeholder-title">Vidéo / GIF</div>
+                  <div class="media-placeholder-sub">Configuré via portfolio.config.js</div>
+                </div>
+              </div>
+
+              <div class="project-actions" aria-label="Liens du projet">
+                <button class="btn btn-secondary js-open-modal" type="button" data-modal="modal-motionrush" data-project="motionrush">
+                  Détails
+                </button>
+
+                <a class="btn btn-secondary" href="https://example.com/video-motionrush" data-project-link="video" target="_blank" rel="noreferrer noopener">Vidéo</a>
+                <a class="btn btn-secondary" href="https://example.com/itch-motionrush" data-project-link="itch" target="_blank" rel="noreferrer noopener">Build / Itch.io</a>
+
+                <!-- SUPPRIMÉ : Code / Breakdown -->
+              </div>
+
+              <div class="skills-row" aria-label="Compétences / systèmes clés">
+                <span class="badge badge-soft">Reverse engineering (mouvement, collisions, sync)</span>
+                <span class="badge badge-soft">Master Clock (déterminisme des trajectoires)</span>
+                <span class="badge badge-soft">Reproduction + création de niveaux</span>
+                <span class="badge badge-soft">Direction artistique minimaliste</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Autres projets -->
+          <div class="card secondary-card" aria-label="Autres projets du CV">
+            <h3 class="card-title">Autres projets du CV</h3>
+            <ul class="bullets">
+              <li><strong>Événement caritatif sur Minecraft</strong> (Endorah, 2026 — mécaniques de jeu en Java, gestion multijoueur)</li>
+              <li><strong>Jeu interactif</strong> (2025 — prototype physique complet, composants électroniques, règles, tests utilisateurs)</li>
+              <li><strong>Jeu vidéo mobile / serious game</strong> (2025 — jeu mobile jouable à un seul bouton)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-immersive" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <h2>Expérience &amp; Scolarité</h2>
+          <p class="section-sub">Parcours professionnel et formation spécialisée en jeu vidéo.</p>
+        </div>
+
+        <div class="two-col">
+          <div class="card">
+            <h3 class="card-title">Expérience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2026</div>
+                <div class="timeline-body">
+                  <div class="timeline-title">Gameplay Développeur Java — Stage (Endorah)</div>
+                  <p class="timeline-text">
+                    Développement de mécaniques de gameplay et gestion multijoueur dans le cadre d’un événement caritatif sur Minecraft.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2024 – 2025</div>
+                <div class="timeline-body">
+                  <div class="timeline-title">Game Master — Freelance (Secret Jeegs, 1 an)</div>
+                  <p class="timeline-text">
+                    Game mastering et régie : gestion de l’immersion, accueil et accompagnement des équipes, ajustement du rythme en temps réel.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Scolarité</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-date">2025–2029</div>
+                <div class="timeline-body">
+                  <div class="timeline-title">ISART Digital, Paris 11e</div>
+                  <p class="timeline-text">
+                    Mastère Game Design &amp; Programming (en apprentissage) — 2e année.
+                    Spécialisation Gameplay Programming, physique, game feel et architecture logicielle.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMPETENCES -->
+    <section class="section section-immersive" id="competences">
+      <div class="container">
+        <div class="section-head">
+          <h2>Compétences &amp; Profil</h2>
+          <p class="section-sub">Expertise technique, architecture gameplay et vision collaborative.</p>
+        </div>
+
+        <div class="competence-grid">
+          <div class="card">
+            <h3 class="card-title">Gameplay &amp; Moteurs</h3>
+            <div class="badge-row">
+              <span class="badge">Unity • C#</span>
+              <span class="badge">Unreal Engine</span>
+              <span class="badge">Godot</span>
+              <span class="badge">Java</span>
+              <span class="badge">Physique &amp; Contrôleurs</span>
+              <span class="badge">Game Feel &amp; Juiciness</span>
+              <span class="badge">Synchronisation &amp; Rythme</span>
+              <span class="badge">Prototypage rapide</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Architecture &amp; Conception</h3>
+            <div class="badge-row">
+              <span class="badge">POO &amp; Design Patterns</span>
+              <span class="badge">ScriptableObjects</span>
+              <span class="badge">State Machines (FSM)</span>
+              <span class="badge">Systèmes modulaires</span>
+              <span class="badge">Reverse engineering</span>
+              <span class="badge">Level design &amp; Pacing</span>
+              <span class="badge">Optimisation &amp; Profiling</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Pipeline &amp; Outils</h3>
+            <div class="badge-row">
+              <span class="badge">Git / GitHub / Fork</span>
+              <span class="badge">Intégration UI &amp; HUD</span>
+              <span class="badge">Intégration audio (FMOD / Unity Audio)</span>
+              <span class="badge">Animations &amp; State Trees</span>
+              <span class="badge">Python</span>
+              <span class="badge">MySQL</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Collaboration &amp; Langues</h3>
+            <div class="badge-row">
+              <span class="badge">Coordination pluridisciplinaire (Tech / Art / Design / Sound)</span>
+              <span class="badge">Méthodologie Agile / Scrum</span>
+              <span class="badge">Immersion &amp; Game Mastering</span>
+              <span class="badge">Français (Natif)</span>
+              <span class="badge">Anglais (B2 — Professionnel &amp; Technique)</span>
+              <span class="badge">Chinois (A2)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-immersive" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="section-sub">Contact direct — réponse rapide.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3 class="card-title">Coordonnées</h3>
+            <ul class="meta-list">
+              <li>
+                <span class="meta-label">Email</span>
+                <a class="meta-value" href="mailto:prsn.clem@gmail.com">prsn.clem@gmail.com</a>
+              </li>
+              <li>
+                <span class="meta-label">Téléphone</span>
+                <a class="meta-value" href="tel:+33766123107">07 66 12 31 07</a>
+              </li>
+              <li>
+                <span class="meta-label">Localisation</span>
+                <span class="meta-value">91210 Draveil</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Liens</h3>
+            <div class="link-list">
+              <a class="link-item" href="https://github.com/" data-link="github" target="_blank" rel="noreferrer noopener">
+                <span class="link-dot" aria-hidden="true"></span> GitHub
+              </a>
+              <a class="link-item" href="https://itch.io/" data-link="itch" target="_blank" rel="noreferrer noopener">
+                <span class="link-dot" aria-hidden="true"></span> Itch.io
+              </a>
+              <a class="link-item" href="https://www.linkedin.com/" data-link="linkedin" target="_blank" rel="noreferrer noopener">
+                <span class="link-dot" aria-hidden="true"></span> LinkedIn
+              </a>
+              <a class="link-item" href="./CV/CV_Clement_Persyn.pdf" data-link="cv" target="_blank" rel="noopener">
+                <span class="link-dot" aria-hidden="true"></span> CV (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          <p>© <span id="year"></span> Clément Persyn — Portfolio statique prêt pour GitHub Pages.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODALES -->
+  <div class="modal-root" aria-hidden="true" data-modal-root>
+    <div class="modal-backdrop js-close-modal" tabindex="-1" aria-hidden="true"></div>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Détails du projet">
+      <div class="modal-head">
+        <div class="modal-title-wrap">
+          <h3 class="modal-title" data-modal-title>Projet</h3>
+          <p class="modal-sub" data-modal-sub>—</p>
+        </div>
+        <button class="icon-btn js-close-modal" type="button" aria-label="Fermer">✕</button>
+      </div>
+
+      <div class="modal-body" data-modal-body></div>
+
+      <div class="modal-foot">
+        <button class="btn btn-secondary js-close-modal" type="button">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">      </div>
+      <div class="footer-right">
+        <a class="footer-link" href="#main">Haut de page</a>
+        <a class="footer-link" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Templates modales -->
+  <template id="modal-stjerne" data-project="stjerne" data-title="Stjerne" data-sub="02/2026 – 04/2026 | Projet d’études ISART Digital">
+    <div class="modal-grid">
+      <div>
+        <h4 class="modal-h">Pitch</h4>
+        <p>
+          Plateformer 3D &amp; exploration aérienne dans le Copenhague enneigé de 1850 :
+          petite fille avec planeur et courants d’air verticaux au-dessus d’une ville hostile.
+        </p>
+
+        <h4 class="modal-h">Réalisations / choix techniques</h4>
+        <ul class="bullets">
+          <li><strong>Physique du joueur</strong> : transitions fluides marche au sol &amp; vol en planeur dans les courants d’air.</li>
+          <li><strong>Architecture événementielle</strong> découplée via <strong>ScriptableObjects</strong> (Player, UI, SoundManager) pour réduire la dette technique et les conflits Git.</li>
+          <li><strong>Technical bridge</strong> avec <strong>7 artistes</strong> : intégration UI &amp; animation pipeline.</li>
+          <li><strong>Level design</strong> &amp; <strong>level building</strong> : guidage et pacing grâce aux courants d’air.</li>
+          <li><strong>Coordination</strong> : travail quotidien en équipe de 13.</li>
+        </ul>
+      </div>
+
+      <div class="modal-side">
+        <h4 class="modal-h">Contexte</h4>
+        <ul class="mini-kv">
+          <li><span>Équipe</span><strong>13 (4 programmeurs, 7 artistes, 2 sound designers)</strong></li>
+          <li><span>Moteur</span><strong>Unity, C#</strong></li>
+          <li><span>Focus</span><strong>Gameplay feel, architecture, coordination</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal-links">
+      <a class="btn btn-secondary" href="https://example.com/video-stjerne" data-project-link="video" target="_blank" rel="noreferrer noopener">Vidéo</a>
+      <a class="btn btn-secondary" href="https://example.com/itch-stjerne" data-project-link="itch" target="_blank" rel="noreferrer noopener">Build / Itch.io</a>
+
+      <!-- SUPPRIMÉ : Code / Breakdown -->
+    </div>
+  </template>
+
+  <template id="modal-groovexe" data-project="groovexe" data-title="GroovExe" data-sub="2026 | Game Jam ISART Digital — 4 jours">
+    <div class="modal-grid">
+      <div>
+        <h4 class="modal-h">Pitch</h4>
+        <p>
+          Jeu de rythme arcade au clavier sur le thème « Print » :
+          protéger son profil numérique en piratant d’autres cibles en rythme avec la musique.
+        </p>
+
+        <h4 class="modal-h">Réalisations / choix techniques</h4>
+        <ul class="bullets">
+          <li><strong>Synchronisation actions/inputs clavier</strong> sur la musique.</li>
+          <li><strong>Déclinaison du thème</strong> « Print » en boucle de gameplay (défense vs hacking).</li>
+          <li><strong>Prototypage rapide</strong>, <strong>scope management</strong> et livraison d’une boucle stable en <strong>4 jours</strong>.</li>
+          <li><strong>Collaboration</strong> avec music/sound designers, artistes et game designers.</li>
+        </ul>
+      </div>
+
+      <div class="modal-side">
+        <h4 class="modal-h">Contexte</h4>
+        <ul class="mini-kv">
+          <li><span>Équipe</span><strong>10 (3 programmeurs, 4 artistes, 2 game designers, 1 sound designer)</strong></li>
+          <li><span>Moteur</span><strong>Unity, C#</strong></li>
+          <li><span>Focus</span><strong>Rythme, inputs, delivery jam</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal-links">
+      <a class="btn btn-secondary" href="https://example.com/video-groovexe" data-project-link="video" target="_blank" rel="noreferrer noopener">Vidéo</a>
+      <a class="btn btn-secondary" href="https://example.com/itch-groovexe" data-project-link="itch" target="_blank" rel="noreferrer noopener">Build / Itch.io</a>
+
+      <!-- SUPPRIMÉ : Code / Breakdown -->
+    </div>
+  </template>
+
+  <template id="modal-motionrush" data-project="motionrush" data-title="Motion Rush" data-sub="10/2025 – 11/2025 | Projet R&amp;D / études ISART Digital">
+    <div class="modal-grid">
+      <div>
+        <h4 class="modal-h">Pitch</h4>
+        <p>
+          Puzzle game 3D de gestion de trajectoires basé sur le reverse engineering de Rush (Two Tribes),
+          avec une direction artistique minimaliste orientée Motion Design.
+        </p>
+
+        <h4 class="modal-h">Réalisations / choix techniques</h4>
+        <ul class="bullets">
+          <li><strong>Reverse engineering</strong> des règles de mouvement, collisions et synchronisation d’entités.</li>
+          <li><strong>Horloge centralisée (Master Clock)</strong> en C# garantissant le <strong>déterminisme</strong> des trajectoires et puzzles.</li>
+          <li><strong>Reproduction</strong> de niveaux de référence puis création de niveaux originaux.</li>
+          <li><strong>Direction artistique minimaliste</strong> façon Motion Design.</li>
+        </ul>
+      </div>
+
+      <div class="modal-side">
+        <h4 class="modal-h">Contexte</h4>
+        <ul class="mini-kv">
+          <li><span>Équipe</span><strong>Solo (1 personne)</strong></li>
+          <li><span>Moteur</span><strong>Unity, C#</strong></li>
+          <li><span>Focus</span><strong>Déterminisme, trajectoires, R&amp;D</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="modal-links">
+      <a class="btn btn-secondary" href="https://example.com/video-motionrush" data-project-link="video" target="_blank" rel="noreferrer noopener">Vidéo</a>
+      <a class="btn btn-secondary" href="https://example.com/itch-motionrush" data-project-link="itch" target="_blank" rel="noreferrer noopener">Build / Itch.io</a>
+
+    </div>
+  </template>
+
+  <!-- Fichier de configuration centralisé -->
+  <script src="portfolio.config.js"></script>
+
+  <script>
+    const config = window.PORTFOLIO_CONFIG || {};
+    const typography = config.typography || {};
+    const globalLinks = config.links || {};
+    const projectsConfig = config.projects || {};
+    const defaultBgImage = config.defaultBgImage || null;
+    const defaultCardBg = config.defaultCardBg || 'rgba(17, 24, 39, 0.82)';
+    const highlightColor = config.highlightColor || null;
+    const themeAccent     = config.themeAccent     || null;
+    const themeAccentDark = config.themeAccentDark || null;
+
+    if (highlightColor) {
+      document.documentElement.style.setProperty('--highlight', highlightColor);
+      document.documentElement.style.setProperty('--highlight-bg', highlightColor + '33');
+    }
+    if (themeAccent) {
+      document.documentElement.style.setProperty('--accent-light', themeAccent);
+    }
+    if (themeAccentDark) {
+      document.documentElement.style.setProperty('--accent-dark', themeAccentDark);
+    }
+
+    if (typography.googleFontsUrl) {
+      const fontsLink = document.getElementById('dynamicFontsLink');
+      if (fontsLink) fontsLink.href = typography.googleFontsUrl;
+    }
+    if (typography.fontBody) {
+      document.documentElement.style.setProperty('--font-body', typography.fontBody);
+    }
+    if (typography.fontHeading) {
+      document.documentElement.style.setProperty('--font-heading', typography.fontHeading);
+    }
+
+    const yearEl = document.getElementById('year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    function applyGlobalLinks(root = document) {
+      root.querySelectorAll('[data-link]').forEach(el => {
+        const key = el.dataset.link;
+        const url = globalLinks[key];
+        if (url) el.setAttribute('href', url);
+      });
+    }
+
+    function applyProjectLinks(container, projectId) {
+      const proj = projectsConfig[projectId];
+      if (!proj || !proj.links) return;
+
+      container.querySelectorAll('[data-project-link]').forEach(linkEl => {
+        const linkKey = linkEl.dataset.projectLink;
+        const url = proj.links[linkKey];
+        if (url) {
+          linkEl.setAttribute('href', url);
+          linkEl.hidden = false;
+        } else {
+          linkEl.hidden = true;
+        }
+      });
+    }
+
+    function renderMediaSlot(slotEl, proj) {
+      if (!slotEl || !proj || !proj.mediaType || !proj.mediaSrc) return;
+
+      if (proj.mediaType === 'image' || proj.mediaType === 'gif') {
+        const img = document.createElement('img');
+        img.src = proj.mediaSrc;
+        img.alt = proj.mediaAlt || 'Aperçu du projet';
+        img.loading = 'lazy';
+        slotEl.replaceChildren(img);
+      } else if (proj.mediaType === 'video') {
+        const video = document.createElement('video');
+        video.src = proj.mediaSrc;
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.controls = true;
+        slotEl.replaceChildren(video);
+      } else if (proj.mediaType === 'youtube') {
+        const iframe = document.createElement('iframe');
+        iframe.src = proj.mediaSrc;
+        iframe.title = proj.mediaAlt || 'Vidéo du projet';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        iframe.loading = 'lazy';
+        slotEl.replaceChildren(iframe);
+      }
+    }
+
+    const pageBgLayer = document.getElementById('pageBgLayer');
+    const projectCards = Array.from(document.querySelectorAll('.project-section[data-project]'));
+
+    if (pageBgLayer && defaultBgImage) {
+      pageBgLayer.style.setProperty('--page-bg', `url("${defaultBgImage}")`);
+      pageBgLayer.classList.add('is-active');
+    }
+
+    function setActivePageBackground(card) {
+      if (!pageBgLayer) return;
+      const projectId = card ? card.dataset.project : null;
+      const proj = projectId ? projectsConfig[projectId] : null;
+      const bgImage = proj?.bgImage || (card ? card.dataset.bgImage : null) || defaultBgImage;
+      const tint = (card ? card.dataset.bgTint : null) || 'linear-gradient(180deg, rgba(10,16,28,.64) 0%, rgba(10,16,28,.52) 50%, rgba(10,16,28,.78) 100%)';
+
+      if (bgImage) {
+        pageBgLayer.style.setProperty('--page-bg', `url("${bgImage}")`);
+        pageBgLayer.classList.add('is-active');
+      }
+      if (tint) {
+        pageBgLayer.style.setProperty('--page-tint', tint);
+      }
+    }
+
+    projectCards.forEach(card => {
+      const projectId = card.dataset.project;
+      const proj = projectsConfig[projectId] || {};
+
+      const bgImg = proj.bgImage || defaultBgImage;
+      if (bgImg) {
+        card.dataset.bgImage = bgImg;
+      }
+
+      const cardBg = proj.cardBg || defaultCardBg;
+      if (cardBg) {
+        card.style.setProperty('--card-bg', cardBg);
+      }
+
+      if (proj.cardBgImage) {
+        card.style.setProperty('--card-bg-image', `url("${proj.cardBgImage}")`);
+      }
+
+      const accent = proj.accentColor || highlightColor;
+      if (accent) {
+        card.style.setProperty('--project-accent', accent);
+        card.style.setProperty('--project-border', accent);
+      }
+
+      const slotEl = card.querySelector('[data-media-slot]');
+      renderMediaSlot(slotEl, proj);
+      applyProjectLinks(card, projectId);
+    });
+
+    const observedSections = Array.from(document.querySelectorAll('.project-section[data-project], #experience, #competences, #contact'));
+
+    if (observedSections.length > 0 && 'IntersectionObserver' in window) {
+      const bgObserver = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter(entry => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+          if (visible[0]) {
+            const target = visible[0].target;
+            if (target.classList.contains('project-section')) {
+              setActivePageBackground(target);
+            } else {
+              setActivePageBackground(null);
+            }
+          }
+        },
+        {
+          rootMargin: '-20% 0px -20% 0px',
+          threshold: [0.1, 0.3, 0.5, 0.7]
+        }
+      );
+
+      observedSections.forEach(el => bgObserver.observe(el));
+    } else if (projectCards[0]) {
+      setActivePageBackground(projectCards[0]);
+    }
+
+    applyGlobalLinks(document);
+
+    // Menu mobile
+    const burger = document.querySelector('.burger');
+    const mobileNav = document.getElementById('mobileNav');
+    if (burger && mobileNav) {
+      burger.addEventListener('click', () => {
+        const expanded = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', String(!expanded));
+        mobileNav.hidden = expanded;
+      });
+      mobileNav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          burger.setAttribute('aria-expanded', 'false');
+          mobileNav.hidden = true;
+        });
+      });
+    }
+
+    // Modal
+    const modalRoot = document.querySelector('[data-modal-root]');
+    const modalEl = modalRoot?.querySelector('.modal');
+    const backdrop = modalRoot?.querySelector('.js-close-modal');
+    const closeButtons = modalRoot?.querySelectorAll('.js-close-modal');
+    const modalTitle = modalRoot?.querySelector('[data-modal-title]');
+    const modalSub = modalRoot?.querySelector('[data-modal-sub]');
+    const modalBody = modalRoot?.querySelector('[data-modal-body]');
+
+    function openModal(modalId) {
+      const src = document.getElementById(modalId);
+      if (!src) return;
+
+      const data = src.dataset;
+      const projectId = data.project;
+      const proj = (projectId && projectsConfig[projectId]) || {};
+
+      modalTitle.textContent = data.title || 'Projet';
+      modalSub.textContent = data.sub || '';
+      modalBody.innerHTML = src.innerHTML;
+
+      if (projectId) applyProjectLinks(modalBody, projectId);
+
+      if (modalEl) {
+        modalEl.className = 'modal';
+        if (projectId) modalEl.classList.add(`theme-${projectId}`);
+
+        const bgImg = proj.modalBgImage || proj.bgImage || defaultBgImage;
+        if (bgImg) modalEl.style.setProperty('--modal-bg-image', `url("${bgImg}")`);
+        else modalEl.style.removeProperty('--modal-bg-image');
+
+        const modalBg = proj.modalBg || (proj.cardBg ? proj.cardBg : defaultCardBg);
+        if (modalBg) modalEl.style.setProperty('--modal-bg', modalBg);
+        else modalEl.style.removeProperty('--modal-bg');
+
+        const accent = proj.accentColor || highlightColor;
+        if (accent) {
+          modalEl.style.setProperty('--modal-accent', accent);
+          modalEl.style.setProperty('--modal-border', accent);
+        } else {
+          modalEl.style.removeProperty('--modal-accent');
+          modalEl.style.removeProperty('--modal-border');
+        }
+      }
+
+      modalRoot.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+      modalRoot.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+      if (modalBody) modalBody.innerHTML = '';
+
+      if (modalEl) {
+        modalEl.className = 'modal';
+        modalEl.style.removeProperty('--modal-bg-image');
+        modalEl.style.removeProperty('--modal-bg');
+        modalEl.style.removeProperty('--modal-accent');
+        modalEl.style.removeProperty('--modal-border');
+      }
+    }
+
+    document.querySelectorAll('.js-open-modal').forEach(btn => {
+      btn.addEventListener('click', () => openModal(btn.dataset.modal));
+    });
+
+    closeButtons?.forEach(b => b.addEventListener('click', closeModal));
+    backdrop?.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
